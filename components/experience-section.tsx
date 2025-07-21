@@ -9,43 +9,35 @@ const experiences = [
   {
     id: 1,
     title: "Freelance Developer",
-    period: "2022 - Present",
+    period: "2023 - Present",
     description:
       "Working with clients worldwide to deliver high-quality web and mobile applications. Specialized in Flutter and React development with a focus on clean, maintainable code and exceptional user experiences.",
-    type: "work",
+    type: "Work",
   },
   {
     id: 2,
     title: "BOLT Hackathon Participant",
-    period: "2023",
+    period: "2025",
     description:
-      "Participated in the world's largest hackathon organized by BOLT. Developed an innovative solution for sustainable energy monitoring using IoT devices and mobile technology.",
-    type: "achievement",
+      "Participated in the world’s largest hackathon organized by BOLT and developed PortoNova — a no-code, AI-powered portfolio builder that enables users to create and deploy personal websites instantly using Next.js, Supabase, and Gemini AI.",
+    type: "Achievement",
   },
   {
     id: 3,
-    title: "Software Engineering Student",
-    period: "2021 - Present",
-    description:
-      "Pursuing a degree in Software Engineering at FAST University. Focusing on modern software development practices, algorithms, data structures, and system design.",
-    type: "education",
+    title: "Intern at NEXIUM",
+    period: "July 2025 - August 2025",
+    description:"Completed a month-long internship at Nexium, where I worked across multiple tech stacks including Next.js 15, ShadCN UI, DaisyUI, n8n, AI agents, Postgres, and MongoDB. Contributed to weekly assignments and built an end-to-end project with CI/CD integration.",
+    type: "Work",
   },
-   {
+    {
     id: 4,
     title: "Software Engineering Student",
-    period: "2021 - Present",
+    period: "2022 - 2026",
     description:
       "Pursuing a degree in Software Engineering at FAST University. Focusing on modern software development practices, algorithms, data structures, and system design.",
     type: "education",
   },
-   {
-    id: 5,
-    title: "Software Engineering Student",
-    period: "2021 - Present",
-    description:
-      "Pursuing a degree in Software Engineering at FAST University. Focusing on modern software development practices, algorithms, data structures, and system design.",
-    type: "education",
-  },
+
 ]
 
 export default function ExperienceSection() {

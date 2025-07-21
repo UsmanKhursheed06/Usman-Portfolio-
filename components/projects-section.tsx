@@ -49,55 +49,10 @@ const projects: Project[] = [
     ],
     github: "https://github.com/UsmanKhursheed06",
   },
-  {
-    id: 2,
-    title: "Metro-POS",
-    description:
-      "A comprehensive point-of-sale system built with JavaFX and SQL for retail businesses.",
-    image: "/placeholder.svg",
-    techStack: ["JavaFX", "SQL", "Scene Builder", "JFoenix"],
-    features: [
-      "Inventory management",
-      "Sales tracking and reporting",
-      "Employee management",
-      "Customer database",
-      "Receipt generation",
-    ],
-    github: "https://github.com/UsmanKhursheed06",
-  },
-  {
-    id: 3,
-    title: "VitaeForge",
-    description:
-      "AI-powered resume builder using MERN stack and Google's Gemini API for intelligent suggestions.",
-    image: "/2.png", // make sure this file exists in /public
-    techStack: ["MongoDB", "Express", "React", "Node.js", "Gemini API"],
-    features: [
-      "AI-powered content suggestions",
-      "Multiple resume templates",
-      "ATS optimization",
-      "PDF export functionality",
-      "Job matching algorithm",
-    ],
-    github: "https://github.com/UsmanKhursheed06",
-    live: "https://vitaeforge.vercel.app",
-  },
-  {
-    id: 4,
-    title: "Portfolio Website",
-    description: "My personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.",
-    image: "/placeholder.svg",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    features: [
-      "Responsive design",
-      "Dark mode",
-      "Animated transitions",
-      "Projects showcase",
-      "Blog section",
-    ],
-    github: "https://github.com/UsmanKhursheed06",
-    live: "https://usman-portfolio.vercel.app",
-  },
+  
+  
+   
+ 
 ]
 
 /**

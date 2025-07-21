@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card } from "@/components/ui/card"
 import { Phone, Mail, Github, Linkedin } from "lucide-react"
 import { useToast } from "@/components/ui/use-toast"
+import SuccessDialog from "@/components/SuccessDialog"
 
 export default function ContactSection() {
   const { toast } = useToast()
@@ -19,6 +20,7 @@ export default function ContactSection() {
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [dialogOpen, setDialogOpen] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -29,15 +31,29 @@ export default function ContactSection() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
 
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    })
+      const data = await res.json()
 
-    setFormData({ name: "", email: "", message: "" })
+      if (data.success) {
+        setFormData({ name: "", email: "", message: "" })
+        setDialogOpen(true)
+      } else {
+        throw new Error(data.error || "Something went wrong")
+      }
+    } catch (error: any) {
+      toast({
+        title: "Failed to send",
+        description: error.message || "Please try again later.",
+        variant: "destructive",
+      })
+    }
+
     setIsSubmitting(false)
   }
 
@@ -189,6 +205,9 @@ export default function ContactSection() {
           </Card>
         </motion.div>
       </div>
+
+      {/* 🎉 Success Dialog with Lottie */}
+      <SuccessDialog open={dialogOpen} onOpenChange={setDialogOpen} />
     </section>
   )
 }
