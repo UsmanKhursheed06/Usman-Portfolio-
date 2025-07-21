@@ -257,8 +257,8 @@ export default function ProjectsSection() {
         open={!!selectedProject}
         onOpenChange={(open) => !open && setSelectedProject(null)}
       >
-        <DialogContent className="glass border-0 max-w-3xl">
-          <DialogHeader>
+        <DialogContent className="glass border-0 w-full max-w-[95vw] md:max-w-3xl max-h-[95vh] overflow-y-auto">
+            <DialogHeader>
             <DialogTitle className="text-2xl font-bold gradient-text">
               {selectedProject?.title}
             </DialogTitle>
