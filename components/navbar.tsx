@@ -101,7 +101,7 @@ export default function Navbar() {
                 className="ml-4 bg-gradient-to-r from-violet-600 to-cyan-500 hover:from-violet-700 hover:to-cyan-600 text-white"
               >
                 <a
-                  href="https://drive.google.com/file/d/1nPPfyiR_5A-ve3cwW5eXx5SSsL9GaHvT/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1tKBHDbVV3Fr86c3T64JWMdtz7j3tdfHm/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

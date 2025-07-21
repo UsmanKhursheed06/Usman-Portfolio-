@@ -34,11 +34,28 @@ interface Project {
 
 const projects: Project[] = [
   {
+  id: 4,
+  title: "Portonova – AI Portfolio Generator",
+  description:
+    "Portonova is a fully AI-powered portfolio website generator that creates stunning, personalized portfolios and deployed in seconds with domain link.",
+  image: "./2.png", // make sure this file exists in /public
+  techStack: ["Next.js", "ShadCN UI", "Tailwind CSS", "Supabase", "Gemini API"],
+  features: [
+    "Generate complete portfolios using AI",
+    "Edit and customize content in real-time",
+    "Beautiful, responsive UI powered by ShadCN & Tailwind",
+    "Deploy portfolio instantly or download source code",
+    "Supports authentication and data persistence with Supabase"
+  ],
+  github: "https://github.com/UsmanKhursheed06/PortoNova",
+  live:"https://portonova.netlify.app/",
+},
+  {
     id: 1,
     title: "Expense Tracker",
     description:
       "A beautiful Flutter application to track personal expenses with detailed analytics and reports.",
-    image: "/placeholder.svg", // make sure this file exists in /public
+    image: "./Expense Tracker.png", // make sure this file exists in /public
     techStack: ["Flutter", "Dart", "Firebase", "SQLite"],
     features: [
       "Real-time expense tracking",
@@ -47,8 +64,45 @@ const projects: Project[] = [
       "Budget planning and alerts",
       "Export reports as PDF",
     ],
-    github: "https://github.com/UsmanKhursheed06",
+    github: "https://github.com/UsmanKhursheed06/Expense-Tracker",
   },
+  {
+  id: 2,
+  title: "Metro POS System",
+  description:
+    "A complete Point of Sale (POS) desktop application built using JavaFX and SQL.",
+  image: "./Metro.png", // make sure this file exists in /public
+  techStack: ["JavaFX", "SQL", "Scene Builder", "JDBC"],
+  features: [
+    "Add, update, and delete products",
+    "Employee and role management",
+    "Sales tracking and reporting",
+    "Real-time analytics and dashboards",
+    "Dedicated admin and staff panels"
+  ],
+  github: "https://github.com/Slynailow/Metro-POS-System"
+},
+{
+  id: 3,
+  title: "VitaeForge",
+  description:
+    "VitaeForge is a modern CV/resume builder web app powered by AI.",
+  image: "./Vitae.png", // make sure this file exists in /public
+  techStack: ["React", "Node.js", "Express", "MongoDB", "Gemini API"],
+  features: [
+    "Real-time CV preview and editing",
+    "AI-generated sections using Gemini API",
+    "Download CV as PDF",
+    "Shareable CV links",
+    "User authentication and CV management"
+  ],
+  github: "https://github.com/UsmanKhursheed06/VitaeFordge"
+},
+
+
+
+
+
   
   
    
