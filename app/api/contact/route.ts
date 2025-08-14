@@ -22,12 +22,12 @@ export async function POST(req: Request) {
     })
 
     // 2. Send copy to sender
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: email,
-      subject: "Copy of your message to Usman Khurshid",
-      text: `Hi ${name},\n\nThanks for reaching out!\n\nHere's a copy of your message:\n\n"${message}"\n\nI'll get back to you soon.\n\nBest,\nUsman Khurshid`,
-    })
+    // await transporter.sendMail({
+    //   from: process.env.EMAIL_USER,
+    //   to: email,
+    //   subject: "Copy of your message to Usman Khurshid",
+    //   text: `Hi ${name},\n\nThanks for reaching out!\n\nHere's a copy of your message:\n\n"${message}"\n\nI'll get back to you soon.\n\nBest,\nUsman Khurshid`,
+    // })
 
     return NextResponse.json({ success: true })
   } catch (error: any) {
